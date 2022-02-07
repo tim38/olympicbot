@@ -1,20 +1,13 @@
 env:
-  browser: true
+  es2021: true
   node: true
-  mocha: true
-extends: 'eslint:recommended'
-rules:
-  indent:
-    - error
-    - 2
-  linebreak-style:
-    - error
-    - unix
-  quotes:
-    - error
-    - single
-  semi:
-    - error
-    - always
-  no-prototype-builtins:
-    - off
+extends:
+  - 'plugin:react/recommended'
+  - airbnb
+  - prettier
+parserOptions:
+  ecmaFeatures:
+    jsx: true
+  ecmaVersion: 12
+  sourceType: module
+rules: {}

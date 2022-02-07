@@ -1,0 +1,8 @@
+{
+  "bail": true,
+  "rootDir": "../",
+  "setupFilesAfterEnv": ["<rootDir>/src/components/setupTests.js"],
+  "moduleNameMapper": {
+    "\\.(css|jpg|svg|png|)$": "<rootDir>/test/emptyModule.js"
+  }
+}

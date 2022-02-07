@@ -1,8 +1,7 @@
 ---
 applications:
-- name: watson-assistant-intermediate
-  command: npm start
-  buildpack: sdk-for-nodejs
-  path: .
-  memory: 256M
-  instances: 1
+  - name: watson-assistant-duo
+    command: npm start
+    buildpack: sdk-for-nodejs
+    env:
+      NODE_ENV: production
